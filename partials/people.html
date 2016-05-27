@@ -1,0 +1,16 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4>
+      Click on the button to generate some data!
+    </h4>
+    <button ng-click="getRandomPerson()" class="btn btn-primary pull-right">Show me a person!</button>
+  </div>
+  <div class="panel-body">
+    <ul ng-show="data.name">
+      <li>Name: {{ data.name }} </li>
+      <li>Birth Year: {{ data.birth_year }}</li>
+      <li>Eye Color: {{ data.eye_color }}</li>
+      <li>Skin Color: {{ data.skin_color }}</li>
+    </ul>
+  </div>
+</div>
