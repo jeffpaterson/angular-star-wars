@@ -6,6 +6,10 @@
     <button ng-click="getRandomPerson()" class="btn btn-primary pull-right">Show me a person!</button>
   </div>
   <div class="panel-body">
-    <!-- show data here -->
+    <ul ng-show="data">
+      <li>Name: {{data.name}}</li>
+      <li>Height: {{data.height}}</li>
+      <li>Hair color: {{data.hair_color}}</li>
+    </ul>
   </div>
 </div>

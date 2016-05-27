@@ -6,6 +6,10 @@
     <button ng-click="getRandomPlanet()" class="btn btn-primary pull-right">Show me a planet!</button>
   </div>
   <div class="panel-body">
-    <!-- show data here -->
+    <ul ng-show="data">
+      <li>Name: {{data.name}}</li>
+      <li>Population: {{data.population}}</li>
+      <li>Gravity: {{data.gravity}}</li>
+    </ul>
   </div>
 </div>
